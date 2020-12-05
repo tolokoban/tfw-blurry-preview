@@ -1,0 +1,48 @@
+{
+  "name": "tfw-blurry-preview",
+  "version": "0.1.0",
+  "description": "Blurry preview of image while loading it.",
+  "license": "GPL-3.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Tolokoban <contact@tolokoban.org>",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolokoban/tfw-blurry-preview.git"
+  },
+  "keywords": [
+    "tolokoban",
+    "toloframework",
+    "tfw",
+    "react"
+  ],
+  "scripts": {
+    "major": "npm version -f major && rm lib/src/cfg.json",
+    "minor": "npm version -f minor && rm lib/src/cfg.json",
+    "patch": "npm version -f patch && rm lib/src/cfg.json",
+    "deploy": "gh-pages",
+    "publish": "npm publish dist"
+  },
+  "bugs": {
+    "url": "https://github.com/tolokoban/tfw-blurry-preview/issues"
+  },
+  "homepage": "https://github.com/tolokoban/tfw-blurry-preview#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

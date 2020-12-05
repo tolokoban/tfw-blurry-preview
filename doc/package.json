@@ -1,0 +1,67 @@
+{
+    "name": "demo",
+    "version": "0.7.0",
+    "private": true,
+    "homepage": ".",
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^11.1.2",
+        "@testing-library/user-event": "^7.2.1",
+        "@types/jest": "^26.0.15",
+        "@types/node": "^11.15.10",
+        "@types/react": "^16.9.35",
+        "@types/react-dom": "^16.9.8",
+        "@types/react-redux": "^7.1.9",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^6.3.0",
+        "css-loader": "^5.0.1",
+        "file-loader": "^6.2.0",
+        "gh-pages": "^3.1.0",
+        "html-webpack-plugin": "^4.5.0",
+        "jest": "^26.6.3",
+        "react-dev-utils": "^10.2.1",
+        "redux-devtools-extension": "^2.13.8",
+        "style-loader": "^2.0.0",
+        "tfw": "^0.55.4",
+        "ts-jest": "^26.4.4",
+        "ts-loader": "^8.0.11",
+        "ts-node": "^9.0.0",
+        "typescript": "^3.9.5",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.4.0",
+        "webpack-cli": "^4.2.0",
+        "webpack-dev-server": "^3.11.0",
+        "workbox-webpack-plugin": "^5.1.4",
+        "yaml-loader": "^0.6.0"
+    },
+    "scripts": {
+        "doc": "typedoc --options typedoc.options.json",
+        "postinstall": "yarn link tfw",
+        "prebuild": "yarn link tfw",
+        "start": "webpack --mode development serve",
+        "build": "react-app-rewired build",
+        "predeploy": "yarn doc && yarn build",
+        "deploy": "gh-pages-clean && gh-pages -b gh-pages -d build",
+        "test": "yarn test"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "port": 63914
+}

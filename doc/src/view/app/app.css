@@ -1,0 +1,32 @@
+body, html {
+    font-family: josefin-sans;
+    font-size: 16px;
+}
+
+div.view-App {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: .25rem;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+div.view-App.vanish {
+    opacity: 0;
+}
+
+div.view-App > div.tab-strip {
+    height: 100%;
+}
+
+div.view-App > div.version {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    padding: .25rem .5rem;
+    opacity: .5;
+}
