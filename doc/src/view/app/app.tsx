@@ -1,8 +1,21 @@
 import React from "react"
 import Font from 'tfw/font'
 import Theme from 'tfw/theme'
+import TfwBlurryPreview from 'tfw-blurry-preview'
 
 import "./app.css"
+
+
+const BlurryView = TfwBlurryPreview.BlurryView
+
+const COLORS: Array<[number, number, number]> = []
+for (let i = 0; i < 12; i++) {
+    COLORS.push([
+        Math.random(),
+        Math.random(),
+        Math.random()
+    ])
+}
 
 interface IAppState {
 }
@@ -41,6 +54,7 @@ export default class App extends React.Component<{}, IAppState> {
         const classes = ["view-App", "thm-bg0"]
 
         return (<div className={classes.join(" ")}>
+            <BlurryView colors={COLORS} columns={4} />
         </div>)
     }
 }

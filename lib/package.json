@@ -24,7 +24,7 @@
     },
     "homepage": "https://github.com/tolokoban/tfw-blurry-preview#readme",
     "dependencies": {
-        "react": "^16.13.1",
+        "react": "^16.13.1"
     },
     "devDependencies": {
         "@types/react": "^16.9.17",
